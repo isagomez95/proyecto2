@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Página web de Eloisa</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Introducción</a>
+            <a href="#">¿Qué es DNS?</a>
+            <a href="#">Historia del DNS</a>
+            <a href="#">¿Cómo funciona DNS?</a>
+            <a href="#">Tipos de servidores DNS</a>
+            <a href="#">¿Cuáles son los pasos en una búsqueda de DNS?</a>
+            <a href="#">¿Qué tipos de consultas de DNS hay?</a>
+            <a href="#">Conclusión</a>
+            <a href="#">Portafolio</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Bienvenidos</h1>
+            <h2>El Sistema de Nombres de Dominio (DNS)</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L0.00,149.60 Z" style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Introducción</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/DNS2.jpeg" alt="Imagen DNS" class="imagen-about-us">
+                <div class="contenido-textos">
+            <p>El Sistema de Nombres de Dominio (DNS) es uno de los procesos fundamentales del funcionamiento de Internet, debido que actúa como un directorio telefónico de la red global. Este sistema facilita la traducción de los nombres de dominio, como www.ejemplo.com, en direcciones IP, las cuales son necesarias para que los navegadores web puedan acceder a los recursos en línea. Sin el DNS, la navegación por Internet sería un proceso complicado, ya que los usuarios tendrían que memorizar largas secuencias numéricas para acceder a los sitios web. El DNS facilita la comunicación en la red al permitir que los nombres de dominio, que son más fáciles de recordar, se conviertan en las direcciones IP que utilizan los dispositivos para identificarse entre sí. Este sistema ha evolucionado a lo largo de las décadas, desde la gestión manual de nombres de host en los años 70 hasta el robusto y escalable sistema jerárquico que conocemos hoy en día, desarrollado por Paul Mockapetris en 1983.</p>
+                </div>
+            <div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">¿Qué es DNS?</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/lupas.jpg" alt="Imagen DNS" class="imagen-about-us">
+                <div class="contenido-textos">
+            <p>El sistema de nombres de dominio (DNS) es el directorio telefónico de Internet. Los navegadores web interactúan mediante direcciones de Protocolo de Internet (IP). El DNS traduce los nombres de dominio a direcciones IP para que los navegadores puedan cargar los recursos de Internet, es decir, el DNS es el componente del protocolo de Internet que se encarga de las conversiones de las direcciones IP que se utilizan las computadoras para identificarse entre sí en la red.</p>
+            <p>Cada dispositivo conectado a Internet tiene una dirección IP única que otros equipos pueden usar para encontrarlo. Los servidores DNS suprimen la necesidad de que los humanos memoricen direcciones IP tales como 192.168.1.1 (en IPv4) o nuevas direcciones IP alfanuméricas más complejas, tales como 2400:cb00:2048:1::c629:d7a2 (en IPv6), en lugar de recordar que el servidor web está en “93.184.216.34" simplemente el usuario puede ir al sitio web www.practica1.com y llegar al resultado esperado.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Historia del DNS</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/historia.jpeg" alt="Imagen DNS" class="imagen-about-us">
+                <div class="contenido-textos">
+            <p>El sistema de nombres de dominio nació a mediados de la década de los 80, pero no fue hasta finales de los noventa cuando empezó a popularizarse. Aunque realmente, la historia del sistema DNS se remonta a los años setenta, cuando los ordenadores conectados a una red ya tenían asignada una dirección numérica. Para acceder a cada uno de estos ordenadores había que saber de memoria esta dirección, pues el sistema de nomenclatura de entonces era bastante limitado. Con el aumento del número de dispositivos conectados a Internet y la necesidad de encontrar una forma más fácil para recordar las IP nació el sistema DNS.</p>
+            <p>Los desarrolladores asignaron manualmente los nombres de host a las direcciones IP mediante el uso de un archivo de texto simple llamado HOSTS.TXT. SRI International mantuvo estos archivos de texto y los distribuyó a todas las computadoras en Internet. No obstante, a medida que la red se expandió, este enfoque se volvió cada vez más insostenible.</p>
+            <p>Paul Mockapetris creó un sistema jerárquico en niveles, de la misma forma que dentro de un libro hay capítulos. Cada una de las etiquetas jerárquicas asignadas a cada dispositivo estarían compuestas por dos elementos: por un lado, el nombre de dominio, y por otra el TLD o extensión. Por ejemplo, en el caso de dinahosting.com, lo que va antes del punto es el nombre y .COM es la extensión.</p>
+            <p>Para hacer frente a las limitaciones de HOSTS.TXT y crear un sistema más escalable, el informático de la Universidad del Sur de California, Paul Mockapetris, inventó el sistema de nombres de dominio en 1983. Una cohorte de pioneros de Internet colaboró en la creación del DNS y fue autora de las primeras peticiones de comentarios (RFC) que detallaban las especificaciones del nuevo sistema, RFC 882 y RFC 883. Posteriormente, las RFC 1034 y 1035 sustituyeron a las anteriores.</p>
+            <p>Eventualmente, a medida que el DNS se expandió, la administración de DNS pasó a ser responsabilidad de la Internet Assigned Numbers Authority (IANA), antes de finalmente quedar bajo el control de la organización sin fines de lucro Internet Corporation for Assigned Names and Numbers (ICANN), en 1998.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">¿Cómo funciona el DNS?</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/inte.jpg" alt="Imagen DNS" class="imagen-about-us">
+                <div class="contenido-textos">
+            <p>El proceso de solución de DNS supone convertir un nombre de servidor (como www.example.com) en una dirección IP compatible con el ordenador (como 192.168.1.1). Se da una dirección IP a cada dispositivo en Internet, y esa dirección será necesaria para encontrar el dispositivo apropiado de Internet.</p>
+            <p>Para entender el proceso de la resolución de DNS, es importante conocer los diferentes componentes de hardware por los que debe pasar una consulta de DNS. Para el navegador web, la búsqueda de DNS se produce "en segundo plano" y no requiere ninguna interacción del ordenador del usuario, aparte de la solicitud inicial.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+        <h2 class="titulo">Tipos de servidores DNS</h2>
+        <div class="contenedor-sobre-nosotros">
+            <img src="img/inte.jpg" alt="Imagen DNS" class="imagen-about-us">
+            <div class="contenido-textos">
+            <p>La arquitectura DNS consta de dos servidores recursivos y servidores autoritativos. Los servidores DNS recursivos son los que "preguntan" y los servidores autoritativos proporcionan las "respuestas".</p>
+            <p>El solucionador recursivo es el equipo que responde a una solicitud recursiva del cliente y dedica tiempo a detectar el registro DNS. Lo hace mediante una serie de solicitudes hasta que alcanza al servidor de nombres DNS autoritativo para el registro solicitado. Estos suelen ser gestionados por proveedores de servicios de internet (ISP), grandes empresas u otros proveedores de servicios de DNS externos.</p>
+            <p>Los resolutores recursivos también almacenan en caché las respuestas a una solicitud durante un cierto periodo (definido por el valor de tiempo de vida o TTL) para mejorar la eficiencia del sistema para futuras consultas al mismo dominio.</p>
+            <p>Los servidores de nombres autoritativos mantienen los registros definitivos de un dominio y responden a las solicitudes sobre los nombres de dominio almacenados en sus respectivas zonas (normalmente, con respuestas configuradas por el propietario del dominio). Existen diferentes tipos de servidores de nombres autoritativos, cada uno de los cuales cumple con una función específica dentro de la jerarquía del DNS.</p>
+            <p>Los servidores de nombres DNS autoritativos incluyen:</p>
+            <ol>
+                <li><strong>Servidor de nombres raíz:</strong> Los servidores de nombres raíz se encuentran en la parte superior de la jerarquía de DNS y son responsables de gestionar la zona raíz (la base de datos central para DNS). Responden consultas de registros almacenados dentro de la zona raíz y remiten las solicitudes al servidor de nombres de TLD apropiado.</li>
+                <li><strong>Servidores de nombres de dominio de nivel superior (TLD):</strong> Los servidores de TLD son responsables de gestionar el siguiente nivel de la jerarquía, incluidos los dominios genéricos de nivel superior (gTLD). Los servidores de nombres de TLD dirigen las consultas a los servidores de nombres autorizados para los dominios específicos dentro de su TLD.</li>
+                <li><strong>Servidores de nombres de dominio (servidores de nombres de dominio de segundo nivel):</strong> El servidor de nombres de dominio (a veces, denominado servidor de nombres de dominio de segundo nivel) contiene el archivo de zona con la dirección IP del nombre de dominio completo, como "ibm.com".</li>
+            </ol>
+            </div>
+        </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">¿Cuáles son los pasos en una búsqueda de DNS?</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/pasos.png" alt="Imagen DNS" class="imagen-about-us">
+                <div class="contenido-textos">
+            <p>Un usuario escribe “example.com” en un navegador web y la consulta recorre Internet y es recibida por un solucionador de DNS recursivo.</p>
+            <p>El solucionador consulta a continuación un servidor de nombres raíz de DNS (.).</p>
+            <p>El servidor raíz responde a continuación al solucionador con la dirección de un servidor de DNS de dominio de primer nivel (TLD) (p.ej. .com o .net), que almacena la información para sus dominios. Al buscar example.com, nuestra solicitud se dirige al TLD .com.</p>
+            <p>El solucionador hará a continuación una solicitud al dominio de primer nivel .com.</p>
+            <p>El servidor TLD responderá a continuación con la dirección IP del servidor de nombres del dominio, example.com.</p>
+            <p>Finalmente, el solucionador recursivo envía una consulta al servidor de nombres del dominio.</p>
+            <p>Por ejemplo, la dirección IP se devolverá al solucionador desde el servidor de nombres.</p>
+            <p>El solucionador de DNS responderá a continuación al navegador web con la dirección IP del dominio solicitado inicialmente.</p>
+            <p>Una vez que los 8 pasos de la búsqueda del DNS han devuelto la dirección IP para example.com, el navegador podrá hacer la solicitud para la página web:</p>
+            <ol>
+                <li>El navegador hará una solicitud de HTTP a la dirección IP.</li>
+                <li>El servidor en esa dirección IP devuelve la página web para que se procese en el navegador.</li>
+            </ol>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Qué tipos de consultas de DNS hay?</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/tiposconsulta.jpg" alt="Imagen DNS" class="imagen-about-us">
+                <div class="contenido-textos">
+            <p>Consulta recursiva: en una consulta recursiva, un cliente DNS requiere que un servidor DNS (generalmente un solucionador de DNS recursivo) responda al cliente con el registro del recurso solicitado o un mensaje de error si el solucionador no puede encontrar el registro.</p>
+            <p>Consulta iterativa: en esta situación, el cliente DNS permitirá que un servidor DNS devuelva la mejor respuesta posible. Si el servidor DNS consultado no cuenta con un nombre que corresponda con el de la consulta, devolverá una referencia a un servidor DNS autoritativo para un nivel inferior del espacio de nombres de dominio. El cliente DNS hará a continuación una consulta a la dirección de referencia. Este proceso continúa con servidores DNS adicionales que siguen en la cadena de consulta hasta que se produzca un error o se supere el tiempo de espera.</p>
+            <p>Consulta no recursiva: generalmente se produce cuando un cliente solucionador de DNS consulta a un servidor DNS por un registro al que tiene acceso porque o bien es autoritativo para el registro o el registro existe dentro de su caché. Generalmente, el servidor DNS almacenará en caché registros DNS para prevenir el consumo de ancho de banda adicional y la carga en los servidores que preceden en la cadena.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Conclusión</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/con.jpg" alt="Imagen DNS" class="imagen-about-us">
+                <div class="contenido-textos">
+            <p>El DNS es esencial para el funcionamiento fluido de Internet, al permitir que los usuarios naveguen por la web de manera intuitiva y eficiente. Desde su invención en los años 80, el sistema DNS ha evolucionado considerablemente, adaptándose a las crecientes demandas de la red global. Su arquitectura jerárquica y su capacidad para resolver consultas de manera eficiente han hecho posible el crecimiento exponencial de Internet. Sin el DNS, la expansión de la red habría sido insostenible, ya que la memorización y gestión de las direcciones IP sería impráctica. Gracias a este sistema, la interacción con la web se ha simplificado, permitiendo un acceso rápido y fiable a los innumerables recursos que Internet ofrece. En última instancia, el DNS no solo es una herramienta técnica, sino también un facilitador del acceso a la información y del desarrollo de la sociedad digital moderna.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/img1.png" alt="Imagen 1">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="Icono trabajo">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img5.png" alt="Imagen 5">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="Icono trabajo">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img6.png" alt="Imagen 6">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="Icono trabajo">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img7.png" alt="Imagen 7">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="Icono trabajo">
+                            <p>Nuestro trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Video de Introducción</h2>
+            <div class="contenido-textos">
+                <p>Para una explicación más detallada, mira nuestro video de introducción:</p>
+                <a href="https://www.youtube.com/watch?v=t7EGv2I5FpM&pp=ygUNcXVlIGVzIGVsIGRucw%3D%3D" target="_blank">Ver Video en YouTube</a>
+            </div>
+        </section>
+        
+    </div>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+               <h4>Teléfono</h4> 
+               <p>9611847909</p> 
+            </div>
+            <div class="content-foo">
+               <h4>Correo Electrónico</h4> 
+               <p>eloisagomezlopez@gmail.com</p> 
+            </div>
+            <div class="content-foo">
+               <h4>Localidad</h4> 
+               <p>Tuxtla Gutiérrez</p> 
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; EloisaGomez</h2>
+     </footer> 
+</body>
+</html>
